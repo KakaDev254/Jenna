@@ -1,0 +1,210 @@
+:root {
+  --primary-color: #cba135; /* Gold from logo */
+  --secondary-color: #e6c463; /* Lighter gold */
+  --dark-bg: #000000; /* Black background */
+  --light-bg: #f9f9f9; /* Light section background */
+  --text-dark: #1e1e1e;
+  --text-light: #ffffff;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Footer */
+header,
+footer {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+}
+
+/* Brand logo */
+.navbar-brand img {
+  height: 45px;
+}
+
+/* Hero Section with Parallax */
+.hero-parallax {
+  background-image: url("assets/farm_thresher.jpg"); /* Your background */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 70vh; /* Occupy full viewport height */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-parallax .overlay {
+  background-color: rgba(0, 0, 0, 0.75); /* Slight dark overlay for contrast */
+  width: 100%;
+  height: 70vh;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-parallax h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-parallax p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-gold {
+  color: var(--primary-color);
+}
+
+/* Button Styling */
+.btn-gold {
+  background-color: var(--primary-color);
+  color: var(--dark-bg);
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-gold:hover {
+  background-color: #b88d15;
+  color: #fff;
+}
+
+/* Responsive - Hero */
+@media (max-width: 767px) {
+  .hero-parallax {
+    background-attachment: scroll;
+    text-align: center;
+  }
+
+  .hero-parallax h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Why Choose Us Section */
+#why-choose {
+  padding: 80px 0;
+  background-color: var(--light-bg);
+}
+
+#why-choose h2,
+#why-choose h5 {
+  font-weight: 700;
+}
+
+#why-choose h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#why-choose p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#why-choose .feature-card {
+  border: 1px solid #ddd;
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+#why-choose .feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(203, 161, 53, 0.2);
+}
+
+#why-choose i {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+/* Stats */
+#why-choose .stat {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  #why-choose h2 {
+    font-size: 1.6rem;
+  }
+
+  #why-choose .feature-card {
+    margin-bottom: 30px;
+  }
+
+  #why-choose i {
+    font-size: 2rem;
+  }
+
+  #why-choose .stat {
+    font-size: 1.1rem;
+  }
+}
+
+/* services section */
+.text-gold {
+  color: var(--primary-color);
+}
+
+.btn-outline-dark {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+#services h5 {
+  color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  #services .btn {
+    width: 100%;
+  }
+}
+
+/* CTA styling */
+#cta {
+  background-color: #0d0d0d;
+  text-align: center;
+}
+
+#cta h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+#cta p {
+  color: #ddd;
+  font-size: 1.1rem;
+}
+
+#cta .btn-gold {
+  font-size: 1.1rem;
+  padding: 12px 28px;
+  border-radius: 8px;
+}
