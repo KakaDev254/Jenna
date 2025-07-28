@@ -25,12 +25,12 @@ footer {
 
 /* Brand logo */
 .navbar-brand img {
-  height: 45px;
+  height: 60px;
 }
 
 /* Hero Section with Parallax */
 .hero-parallax {
-  background-image: url("assets/farm_thresher.jpg"); /* Your background */
+  background-image: url("assets/parallax.jpg"); /* Your background */
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -143,6 +143,7 @@ footer {
   margin-bottom: 1rem;
 }
 video {
+  margin-top: 3rem;
   object-fit: cover;
   width: 100%;
   height: 100%;
